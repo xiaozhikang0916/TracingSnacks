@@ -14,6 +14,35 @@
 			<option>slow</option>
 		</select>
 		<input type="button" id="startBtn" value="Start" />
+		<input type="button" id="htpBtn" value="How to Play" />
+<div id="readme" class="hidden" style="visibility: hidden">
+	<article class="markdown-body entry-content" itemprop="mainContentOfPage">
+		<h1>
+			<a id="user-content-tracingsnacks" class="anchor" href="#tracingsnacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>TracingSnacks</h1>
+		<p>It is a douple players game with 2 snacks tracing and trying to eat each other. Implemented in Javascript.</p>
+		<h2>
+			<a id="user-content-how-to-play" class="anchor" href="#how-to-play" aria-hidden="true"><span class="octicon octicon-link"></span></a>How to play</h2>
+		<ul>
+			<li>Select a game speed below you want, and click
+				<code>Start</code>button to start the game.</li>
+			<li>Player1 should use
+				<code>W</code>
+				<code>S</code>
+				<code>A</code>
+				<code>D</code>button to control the red snack.</li>
+			<li>Player2 should use
+				<code>Arrow buttons</code>to control the blue snack.</li>
+		</ul>
+		<h2>
+			<a id="user-content-game-rules" class="anchor" href="#game-rules" aria-hidden="true"><span class="octicon octicon-link"></span></a>Game rules</h2>
+		<ol>
+			<li>Each snack has the length of 5 at the beginning.</li>
+			<li>If one snack eat the other at the body, it's length will grow by 1.</li>
+			<li>If one snack crash onto the wall, if would be the same as that it's eaten by the other.</li>
+			<li>One snack with it's length decreased to 0 will lose.</li>
+		</ol>
+	</article>
+</div>
 	</body>
 	<script src="./javascript/main.js">	</script>
 

@@ -33,6 +33,9 @@ onload = function () {
 	blueSnack = new Array;
 
 	document.getElementById('startBtn').addEventListener('click', init);
+	document.getElementById('htpBtn').addEventListener('click',function () {
+		document.getElementById('readme').style.visibility="visible";
+	})
 	
 
 };
