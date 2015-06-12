@@ -181,17 +181,35 @@ function move() {
 function checkColl(params) {
 	var blueHead = blueSnack[0];
 	var redHead = redSnack[0];
-	// check eat
-	for (var i = 0;i < redSnack.length; i++){
-		if (blueHead.x == redSnack[i].x && blueHead.y == redSnack[i].y && blueHead != redHead){
-			blueEat = true;
+	// check eat in normal situation
+	if (blueSnack.length != 1 && redSnack.length != 1) {
+		for (var i = 0; i < redSnack.length; i++) {
+			if (blueHead.x == redSnack[i].x && blueHead.y == redSnack[i].y && blueHead != redHead) {
+				blueEat = true;
+			}
+		}
+
+		for (var i = 0; i < blueSnack.length; i++) {
+			if (redHead.x == blueSnack[i].x && redHead.y == blueSnack[i].y && redHead != blueHead) {
+				redEat = true;
+			}
 		}
 	}
 	
-	for (var i = 0; i < blueSnack.length; i++){
-		if (redHead.x == blueSnack[i].x && redHead.y == blueSnack[i].y && redHead != blueHead){
-			redEat = true;
+	//check eat while one is to die
+	else{
+		for (var i = 0; i < redSnack.length; i++) {
+			if (blueHead.x == redSnack[i].x && blueHead.y == redSnack[i].y) {
+				blueEat = true;
+			}
 		}
+
+		for (var i = 0; i < blueSnack.length; i++) {
+			if (redHead.x == blueSnack[i].x && redHead.y == blueSnack[i].y) {
+				redEat = true;
+			}
+		}
+		
 	}
 	
 	//check blue wall

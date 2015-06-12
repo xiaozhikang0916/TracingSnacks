@@ -9,6 +9,7 @@ Implemented in Javascript.
 
 ## Game rules
 1. Each snack has the length of 5 at the beginning.
-2. If one snack eat the other at the body, it's length will grow by 1.
-3. If one snack crash onto the wall, if would be the same as that it's eaten by the other.
-4. One snack with it's length decreased to 0 will lose.
+2. If one snack eat the other at the body **but not the head**, it's length will grow by 1.
+3. You can eat the other snack at the head only when he has the length of 1.
+4. If one snack crash onto the wall, if would be the same as that it's eaten by the other.
+5. One snack with it's length decreased to 0 will lose.
