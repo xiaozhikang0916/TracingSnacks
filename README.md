@@ -3,6 +3,7 @@ It is a douple players game with 2 snacks tracing and trying to eat each other.
 Implemented in Javascript.
 
 You can play this game [here](http://xiaozhikang0916.github.io/TracingSnacks/).
+
 [GitHub page](https://github.com/xiaozhikang0916/TracingSnacks).
 
 ## How to play
